@@ -1,13 +1,13 @@
 import mysql.connector  
 import module
-mydb=mysql.connector.connect(host='localhost', user='root', password='Vd@2306180')
+mydb=mysql.connector.connect(host='localhost', user='root', password='XXXXXX')#Password of MySQL
 mycursor=mydb.cursor()
 try:
     mycursor.execute("CREATE DATABASE library")
 except:
     pass
 
-mydb2=mysql.connector.connect(host='localhost', user='root', password='Vd@2306180', database='library')
+mydb2=mysql.connector.connect(host='localhost', user='root', password='XXXXXXX', database='library')#Password of MySQL
 mycursor2=mydb2.cursor()
 try:
     mycursor2.execute("""CREATE TABLE admin
